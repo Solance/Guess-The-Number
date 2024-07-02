@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Guess The Number!</title>
+        <link rel="stylesheet" href="css.css" />
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div>
+            <h1>Guess The Number!</h1>
+            <h3>
+                We have randomized a number between 0 and 100. We will tell you whether the guessed number is higher or lower. You
+                have 10 attempts.
+            </h6>
+        </div>
+        <div>
+            <p>Guess a number</p>
+            <input id="number-input" type="text" />
+            <button
+                id="input-button"
+                type="button"
+                onclick="getGuessedNumberVal()"
+            >
+                Check guess
+            </button>
+        </div>
+    </body>
+</html>

@@ -15,7 +15,11 @@
         </div>
         <div>
             <p>Guess a number</p>
-            <input id="number-input" type="text" />
+            <input
+                id="number-input"
+                type="number"
+                onkeydown="return event.keyCode !== 69"
+            />
             <button
                 id="input-button"
                 type="button"

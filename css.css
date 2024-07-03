@@ -2,3 +2,6 @@ div {
     margin-top: 5em;
     text-align: center;
 }
+#number-input {
+    width: 8em;
+}

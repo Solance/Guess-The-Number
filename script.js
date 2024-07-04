@@ -21,9 +21,17 @@ function submitGuessedNumber() {
     guesses.textContent =
         guesses.textContent +
         " " +
-        (guessedNumbers.includes(guessedNumber) ? "" : guessedNumber);
+        (guessedNumbers.includes(guessedNumber) ||
+        guessedNumber < 0 ||
+        guessedNumber > 100
+            ? ""
+            : guessedNumber);
 
-    if (!guessedNumbers.includes(guessedNumber)) {
+    if (
+        !guessedNumbers.includes(guessedNumber) &&
+        guessedNumber >= 0 &&
+        guessedNumber <= 100
+    ) {
         guessedNumbers.push(guessedNumber);
         console.log(guessedNumbers);
     }
@@ -44,6 +52,9 @@ function checkNumber(guessedNumber) {
     } else if (guessedNumbers.includes(guessedNumber)) {
         document.getElementById("hint").innerHTML =
             "You have already tried that number, please enter a different one!";
+    } else if (guessedNumber < 0 || guessedNumber > 100) {
+        document.getElementById("hint").innerHTML =
+            "Pleasr enter a number between 0 and 100!";
     } else if (guessedNumber < randomizedNumber) {
         document.getElementById("hint").innerHTML = "The number is too low!";
     } else if (guessedNumber > randomizedNumber) {

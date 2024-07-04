@@ -33,7 +33,11 @@ function submitGuessedNumber() {
 }
 
 function checkNumber(guessedNumber) {
-    if (guessedNumbers.length > 8 && guessedNumber != randomizedNumber) {
+    if (
+        guessedNumbers.length > 8 &&
+        guessedNumber != randomizedNumber &&
+        !guessedNumbers.includes(guessedNumber)
+    ) {
         document.getElementById("hint").innerHTML =
             "You have reached the maximum of 10 guesses! Maybe next time :)";
         gameOver();
@@ -45,7 +49,8 @@ function checkNumber(guessedNumber) {
     } else if (guessedNumber > randomizedNumber) {
         document.getElementById("hint").innerHTML = "The number is too high!";
     } else {
-        document.getElementById("hint").innerHTML = "You guessed the number!";
+        document.getElementById("hint").innerHTML =
+            "You guessed the number! Good job!";
         gameOver();
     }
 }

@@ -67,4 +67,9 @@ function checkNumber(guessedNumber) {
 }
 function gameOver() {
     console.log("game over!");
+    const newGameButton = document.createElement("button");
+    newGameButton.className = "new-game-button";
+    var newButtonGameText = document.createTextNode("New game");
+    newGameButton.appendChild(newButtonGameText);
+    document.body.appendChild(newGameButton);
 }

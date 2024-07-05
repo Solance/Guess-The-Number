@@ -66,10 +66,14 @@ function checkNumber(guessedNumber) {
     }
 }
 function gameOver() {
-    console.log("game over!");
-    const newGameButton = document.createElement("button");
-    newGameButton.className = "new-game-button";
-    var newButtonGameText = document.createTextNode("New game");
-    newGameButton.appendChild(newButtonGameText);
-    document.body.appendChild(newGameButton);
+    document.getElementById("new-game-button").style.visibility = "visible";
+}
+
+function newGame() {
+    randomizeNumber();
+    console.log(randomizedNumber);
+    guessedNumbers = [];
+    document.getElementById("new-game-button").style.visibility = "hidden";
+    guesses.textContent = "";
+    document.getElementById("hint").innerHTML = "";
 }

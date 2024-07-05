@@ -6,8 +6,9 @@ div {
     width: 8em;
 }
 
-.new-game-button {
+#new-game-button {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    visibility: hidden;
 }

@@ -1,3 +1,8 @@
+body {
+    background-color: rgb(60, 170, 207);
+    font-family: "Urbanist", sans-serif;
+}
+
 div {
     margin-top: 1em;
     text-align: center;
@@ -5,16 +10,34 @@ div {
 
 .content {
     width: 40%;
-    margin-top: 10em;
+    margin-top: 8em;
     margin-left: auto;
     margin-right: auto;
 }
 
 .game {
-    border: 1px solid black;
+    margin-top: 2em;
+    padding-top: 1rem;
+    background-color: white;
+    border-radius: 10px;
 }
 
 #title {
+    color: white;
+    font-size: 5rem;
+    font-family: "Lilita One", sans-serif;
+    margin-bottom: 2rem;
+}
+
+#instructions {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+#guess-a-number {
+    font-size: 1.2rem;
+    font-weight: 500;
 }
 
 #number-input {

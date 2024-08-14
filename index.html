@@ -3,17 +3,29 @@
     <head>
         <title>Guess The Number!</title>
         <link rel="stylesheet" href="css.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
     </head>
     <body>
         <div class="content">
-            <h1 id="title">Guess The Number!</h1>
+            <h1 id="title">GUESS THE NUMBER!</h1>
             <p id="instructions">
                 We have randomized a number between 0 and 100. We will tell you
                 whether the guessed number is higher or lower. You have 10
                 attempts.
             </p>
             <div class="game">
-                <p>Guess a number</p>
+                <p id="guess-a-number">Guess a number</p>
                 <input
                     id="number-input"
                     type="number"

@@ -67,9 +67,13 @@ function checkNumber(guessedNumber) {
 }
 function gameOver() {
     document.getElementById("new-game-button").style.visibility = "visible";
+    document.getElementById("number-input").disabled = true;
+    document.getElementById("input-button").disabled = true;
 }
 
 function newGame() {
+    document.getElementById("number-input").disabled = false;
+    document.getElementById("input-button").disabled = false;
     randomizeNumber();
     console.log(randomizedNumber);
     guessedNumbers = [];

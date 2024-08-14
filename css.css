@@ -1,9 +1,30 @@
 div {
-    margin-top: 5em;
+    margin-top: 1em;
     text-align: center;
 }
+
+.content {
+    width: 40%;
+    margin-top: 10em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.game {
+    border: 1px solid black;
+}
+
+#title {
+}
+
 #number-input {
     width: 8em;
+}
+
+#hint {
+}
+
+.guesses {
 }
 
 #new-game-button {

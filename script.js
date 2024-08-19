@@ -40,6 +40,15 @@ function submitGuessedNumber() {
     document.getElementById("number-input").focus();
 }
 
+document
+    .getElementById("number-input")
+    .addEventListener("keypress", function (event) {
+        if (event.key === "Enter") {
+            event.preventDefault();
+            submitGuessedNumber();
+        }
+    });
+
 function checkNumber(guessedNumber) {
     if (
         guessedNumbers.length > 8 &&

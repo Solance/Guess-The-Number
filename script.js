@@ -75,7 +75,7 @@ function checkNumber(guessedNumber) {
     }
 }
 function gameOver() {
-    document.getElementById("new-game-button").style.visibility = "visible";
+    document.getElementById("new-game-button").style.display = "block";
     document.getElementById("number-input").disabled = true;
     document.getElementById("input-button").disabled = true;
 }

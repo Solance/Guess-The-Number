@@ -86,7 +86,7 @@ function newGame() {
     randomizeNumber();
     console.log(randomizedNumber);
     guessedNumbers = [];
-    document.getElementById("new-game-button").style.visibility = "hidden";
+    document.getElementById("new-game-button").style.display = "none";
     guesses.textContent = "";
     document.getElementById("hint").innerHTML = "";
 }

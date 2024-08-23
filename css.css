@@ -10,7 +10,7 @@ div {
 
 .content {
     width: 40%;
-    margin-top: 8em;
+    margin-top: 6em;
     margin-left: auto;
     margin-right: auto;
 }
@@ -60,6 +60,7 @@ div {
 
 #number-input:disabled {
     background-color: #d7e3e6;
+    cursor: not-allowed;
 }
 
 #input-button {
@@ -81,16 +82,21 @@ div {
 }
 
 #input-button:disabled {
-    background-color: #91b2c2;
+    background-color: #6b95aa;
+    cursor: not-allowed;
+    border: 1.5px solid #6b95aa;
 }
 
 #hint {
     font-size: 1.1rem;
     margin: 0;
+    color: rgb(34, 95, 125);
 }
 
 .guesses {
     font-size: 0.9rem;
+    color: rgb(34, 95, 125);
+    font-weight: bold;
 }
 
 #new-game-button {
@@ -107,6 +113,12 @@ div {
     padding-left: 1.2rem;
     padding-right: 1.2rem;
     border: 1px solid rgb(61, 149, 176);
+    transition: 0.3s;
+}
+
+#new-game-button:hover {
+    background-color: rgb(50, 121, 157);
+    cursor: pointer;
 }
 
 /* HIDE ARROWS IN INPUT FIELD */
